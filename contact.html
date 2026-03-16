@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Commerce Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Responsive Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">E-Shop</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu with all 10 pages -->
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="product-view.html">Product View</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="order-confirmation.html">Order Confirmation</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+            
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <a href="search.html" class="search-icon">Search</a>
+                <a href="cart.html" class="cart-icon">
+                    Cart <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <h1>Contact Us</h1>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Have a question or need help? We're here to assist you.</p>
+                
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>info@eshop.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Phone</h3>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <h3>Address</h3>
+                    <p>123 Commerce Street<br>Shopping City, ST 12345</p>
+                </div>
+                <div class="info-item">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>Send Us a Message</h2>
+                <div class="success-message" id="contact-success">
+                    <i class="success-icon">✓</i>
+                    Thank you for your message! We have received your inquiry and will get back to you within 24-48 hours.
+                </div>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="contact-name">Your Name *</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" id="contact-email" name="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <input type="text" id="contact-subject" name="subject" placeholder="What is this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-placeholder">
+                <p>Map integration would go here</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>E-Shop</h3>
+                <p>Your one-stop shop for all your needs. We provide quality products at competitive prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="category.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="order-confirmation.html">Order Status</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@eshop.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Address: 123 Commerce Street<br>Shopping City, ST 12345</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" title="Scroll to top">↑</button>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/validation.js"></script>
+    
+    <!-- jQuery Contact Form Validation -->
+    <script>
+    $(document).ready(function() {
+        // Contact form validation using jQuery
+        $('#contact-form').on('submit', function(e) {
+            e.preventDefault();
+            
+            var isValid = true;
+            var $form = $(this);
+            
+            // Clear previous states
+            $('.form-group').removeClass('error success');
+            $('.error-message').remove();
+            $('#contact-success').removeClass('show');
+            
+            // Validate Name
+            var name = $('#contact-name').val().trim();
+            if (name === '') {
+                showError($('#contact-name'), 'Please enter your name');
+                isValid = false;
+            } else if (name.length < 2) {
+                showError($('#contact-name'), 'Name must be at least 2 characters');
+                isValid = false;
+            } else {
+                showSuccess($('#contact-name'));
+            }
+            
+            // Validate Email
+            var email = $('#contact-email').val().trim();
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === '') {
+                showError($('#contact-email'), 'Please enter your email address');
+                isValid = false;
+            } else if (!emailPattern.test(email)) {
+                showError($('#contact-email'), 'Please enter a valid email address');
+                isValid = false;
+            } else {
+                showSuccess($('#contact-email'));
+            }
+            
+            // Validate Subject
+            var subject = $('#contact-subject').val().trim();
+            if (subject === '') {
+                showError($('#contact-subject'), 'Please enter a subject');
+                isValid = false;
+            } else if (subject.length < 3) {
+                showError($('#contact-subject'), 'Subject must be at least 3 characters');
+                isValid = false;
+            } else {
+                showSuccess($('#contact-subject'));
+            }
+            
+            // Validate Message
+            var message = $('#contact-message').val().trim();
+            if (message === '') {
+                showError($('#contact-message'), 'Please enter your message');
+                isValid = false;
+            } else if (message.length < 10) {
+                showError($('#contact-message'), 'Message must be at least 10 characters');
+                isValid = false;
+            } else {
+                showSuccess($('#contact-message'));
+            }
+            
+            // If form is valid, show success message
+            if (isValid) {
+                $('#contact-success').addClass('show');
+                $form[0].reset();
+                
+                // Remove success classes after reset
+                setTimeout(function() {
+                    $('.form-group').removeClass('success');
+                }, 100);
+                
+                // Scroll to success message
+                $('html, body').animate({
+                    scrollTop: $('#contact-success').offset().top - 100
+                }, 500);
+            }
+        });
+        
+        // Real-time validation on blur
+        $('#contact-name, #contact-email, #contact-subject, #contact-message').on('blur', function() {
+            var field = $(this);
+            var value = field.val().trim();
+            var fieldId = field.attr('id');
+            
+            // Skip if field is empty on blur (required validation will handle it on submit)
+            if (value === '') {
+                return;
+            }
+            
+            var isValid = true;
+            
+            switch(fieldId) {
+                case 'contact-name':
+                    if (value.length < 2) {
+                        showError(field, 'Name must be at least 2 characters');
+                        isValid = false;
+                    } else {
+                        showSuccess(field);
+                    }
+                    break;
+                    
+                case 'contact-email':
+                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(value)) {
+                        showError(field, 'Please enter a valid email address');
+                        isValid = false;
+                    } else {
+                        showSuccess(field);
+                    }
+                    break;
+                    
+                case 'contact-subject':
+                    if (value.length < 3) {
+                        showError(field, 'Subject must be at least 3 characters');
+                        isValid = false;
+                    } else {
+                        showSuccess(field);
+                    }
+                    break;
+                    
+                case 'contact-message':
+                    if (value.length < 10) {
+                        showError(field, 'Message must be at least 10 characters');
+                        isValid = false;
+                    } else {
+                        showSuccess(field);
+                    }
+                    break;
+            }
+        });
+        
+        // Clear error state when user starts typing
+        $('#contact-name, #contact-email, #contact-subject, #contact-message').on('input', function() {
+            var field = $(this);
+            if (field.closest('.form-group').hasClass('error')) {
+                field.closest('.form-group').removeClass('error');
+                field.next('.error-message').remove();
+            }
+        });
+        
+        // Helper function to show error
+        function showError(field, message) {
+            var formGroup = field.closest('.form-group');
+            formGroup.removeClass('success');
+            formGroup.addClass('error');
+            
+            // Remove existing error message
+            field.next('.error-message').remove();
+            
+            // Add new error message
+            field.after('<div class="error-message">' + message + '</div>');
+        }
+        
+        // Helper function to show success
+        function showSuccess(field) {
+            var formGroup = field.closest('.form-group');
+            formGroup.removeClass('error');
+            formGroup.addClass('success');
+            
+            // Remove existing error message
+            field.next('.error-message').remove();
+        }
+    });
+    </script>
+</body>
+</html>
